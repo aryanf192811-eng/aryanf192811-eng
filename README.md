@@ -24,7 +24,10 @@ I design systems where data models, workflows, and state transitions are first-c
 <p align="center">
   <img height="180em" src="https://streak-stats.demolab.com/?user=aryanf192811-eng&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&stroke=1D4ED8&ring=7C3AED&fire=EC4899&currStreakLabel=58A6FF" alt="GitHub Streak" />
   &nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aryanf192811-eng&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117&cache_seconds=86400" alt="Top Languages" />
+  <p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/output/github-snake-dark.svg" alt="Contribution Snake" />
+</p>
+  <!-- <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aryanf192811-eng&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117&cache_seconds=86400" alt="Top Languages" /> -->
 </p>
 
 <!-- 
