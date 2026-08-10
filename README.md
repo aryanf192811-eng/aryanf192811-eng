@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Aryan&fontSize=80&fontColor=fff&animation=twinkling&fontAlignY=42&desc=Backend+Systems+%7C+Database+Engineering+%7C+Workflow+Automation&descAlignY=64&descSize=16&descColor=93c5fd" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ganpati&fontSize=80&fontColor=fff&animation=twinkling&fontAlignY=42&desc=Backend+Systems+%7C+Database+Engineering+%7C+Workflow+Automation&descAlignY=64&descSize=16&descColor=93c5fd" />
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;PostgreSQL+%C2%B7+FastAPI+%C2%B7+Node.js+%C2%B7+React+19+%C2%B7+Raw+SQL;Manufacturing+ERP+%C2%B7+GATE+Platform+%C2%B7+Campus+Social+Platform" alt="Typing SVG" />
