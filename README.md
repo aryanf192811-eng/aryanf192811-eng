@@ -30,6 +30,8 @@ I design systems where data models, workflows, and state transitions are first-c
   <!-- <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aryanf192811-eng&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117&cache_seconds=86400" alt="Top Languages" /> -->
 </p>
 
+<img height="180em" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/streak.svg" alt="GitHub Streak" />
+
 <!-- 
   CONTRIBUTION SNAKE — requires one-time GitHub Actions setup:
 
@@ -43,7 +45,7 @@ I design systems where data models, workflows, and state transitions are first-c
   4. After it completes, uncomment the line below:
 -->
 <!-- <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/output/github-snake-dark.svg" alt="Contribution Snake" /> -->
-
+   
 ---
 
 ## 🛠️ Technical Stack
