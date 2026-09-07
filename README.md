@@ -15,20 +15,6 @@ I design systems where data models, workflows, and state transitions are first-c
 
 ---
 
-## 📊 By the Numbers
-
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/impact-stats.svg" alt="8 shipped projects, 40+ API endpoints, 30+ DB tables, 3x hackathon finalist" />
-</p>
-
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/language-stats.svg" alt="Language mix: TypeScript 46.7%, JavaScript 46.4%, Python 5.9%, C++ 0.8%, Other 0.2%" />
-</p>
-
-<p align="center"><sub>Computed from real GitHub API byte counts across every repository (public + private) — vendored dependencies, seed/dataset files, and duplicated static content excluded by hand, not a generated widget.</sub></p>
-
----
-
 ## ⚡ GitHub Activity
 
 <p align="center">
