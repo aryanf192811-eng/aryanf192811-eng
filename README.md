@@ -106,6 +106,229 @@ I design systems where data models, workflows, and state transitions are first-c
 
 <br/>
 
+### 🛡️ Aaraksha — Smart Tourism, Safe Journey  ⭐ Flagship
+
+> Smart India Hackathon 2026 · Student Innovation · Travel & Tourism theme
+> An AI-Native Travel Planning, Verified Local Tourism Discovery, and Offline-Resilient Safety Platform for Northeast Indian Terrain
+
+**Problem:** Northeast India pulls a growing number of tourists into terrain most tourism and safety apps were never built for — 3000m mountain passes, zero-connectivity valleys, and a local tourism economy with almost no digital presence a traveller can trust. Existing tourism apps stop at itinerary planning; existing safety apps assume a phone signal.
+
+```mermaid
+flowchart TB
+    DB[(PostgreSQL\n33 tables, raw SQL)] --- API([Express API\n145 endpoints · JWT + RBAC])
+    API ---|Socket.IO| T([🧭 Tourist PWA])
+    API ---|Socket.IO| G([🖥️ Govt Command Center])
+    API ---|token link| F([👪 Guardian Portal])
+    API ---|Socket.IO| R([🚑 Rescuer App])
+    style DB fill:#0f172a,color:#fff,stroke:none
+    style API fill:#7c2d12,color:#fff,stroke:none
+    style T fill:#b45309,color:#fff,stroke:none
+    style G fill:#065f46,color:#fff,stroke:none
+    style F fill:#5b21b6,color:#fff,stroke:none
+    style R fill:#0891b2,color:#fff,stroke:none
+```
+
+| | |
+|--|--|
+| ![Portals](https://img.shields.io/badge/4%20Portals-3b82f6?style=flat-square) | Tourist PWA · Govt Command Center · Guardian (no-login) · Rescuer App — one real-time data model |
+| ![API](https://img.shields.io/badge/145%20API%20Endpoints-f97316?style=flat-square) | 18 route groups, Route → Middleware → Controller → Service → Repository |
+| ![ML](https://img.shields.io/badge/Real%20Trained%20Model-8b5cf6?style=flat-square) | From-scratch logistic regression — no scikit-learn, no TensorFlow — 75.6% test accuracy, explainable per-prediction |
+| ![Offline](https://img.shields.io/badge/Offline%20SOS-2G%20Capable-dc2626?style=flat-square) | SOS over raw SMS with zero data connection — a Twilio webhook does the rest |
+| ![Digital ID](https://img.shields.io/badge/Hash--Chained%20Digital%20ID-0ea5e9?style=flat-square) | A real SHA-256 hash chain over every check-in, SOS event, and govt checkpoint scan — independently recomputable |
+| ![QA](https://img.shields.io/badge/13%20Adversarial%20QA%20Phases-991b1b?style=flat-square) | Rate-limit bypass attempts, SQLi payloads, concurrent double-resolve races — each found, fixed, re-verified live |
+
+**Technical Decisions**
+
+| Decision | Reasoning |
+|----------|-----------|
+| **A rescue handoff verification code** | HMAC-hashed, 3-attempt lockout, checked against 250m GPS proximity — a rescuer has to physically reach the tourist to close a case, not just claim it by radio |
+| **Rule-based TSI alongside a trained ML model, both labeled honestly** | A rule-based Travel Safety Index recalculated hourly from live weather, and a separate, genuinely trained Predictive Risk Score — neither pretends to be the other |
+| **Dead Man's Switch** | The safety layer's core assumption is the opposite of most apps: the moment someone needs help is exactly when their phone stops being reliable |
+| **Government-verified local tourism directory, not a booking platform** | A discovery/trust layer solves what's actually missing — a real hotel/guide being discoverable — without building a much larger, out-of-scope OTA clone |
+| **DPDP Act 2023 data rights, not a slide-deck paragraph** | A tourist can export or request deletion of their own data — anonymized in place, never a raw DELETE, so legally-retainable SOS/E-FIR history survives |
+
+<p align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/React%2019-20232A?style=flat-square&logo=react&logoColor=61DAFB" />&nbsp;
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/MapLibre%20GL%20JS-396CB2?style=flat-square" />&nbsp;
+<img src="https://img.shields.io/badge/OSRM-000000?style=flat-square" />&nbsp;
+<img src="https://img.shields.io/badge/TensorFlow.js-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Gemini%20AI-4285F4?style=flat-square&logo=google&logoColor=white" />
+</p>
+
+🔗 [Repository](https://github.com/aryanf192811-eng/Aaraksha)
+
+<br/>
+
+---
+
+### 🚛 LEVO — Smart Transport Operations Platform
+
+> Production-grade fleet & logistics · 9-rule atomic dispatch engine
+
+**Problem:** Fleet operators need dispatch decisions that are safe under concurrency — two dispatchers assigning the same vehicle at the same moment, or dispatching an in-shop vehicle, are real failure modes a naive Express+Postgres app doesn't prevent by default.
+
+```mermaid
+flowchart LR
+    A([Trip\nRequest]) --> B{9 Business\nRules}
+    B -->|Pass| C([Atomic\nDispatch])
+    B -->|Fail| D([Rejected])
+    C --> E([Active Trip])
+    E --> F([Completion])
+    F --> G([Auto-Maintenance\nCheck])
+    style A fill:#1e40af,color:#fff,stroke:none
+    style B fill:#7c2d12,color:#fff,stroke:none
+    style C fill:#065f46,color:#fff,stroke:none
+    style D fill:#991b1b,color:#fff,stroke:none
+    style E fill:#5b21b6,color:#fff,stroke:none
+    style F fill:#b45309,color:#fff,stroke:none
+    style G fill:#0f172a,color:#fff,stroke:none
+```
+
+| | |
+|--|--|
+| ![Dispatch](https://img.shields.io/badge/Dispatch%20Engine-7c2d12?style=flat-square) | 9 strict business rules enforced atomically via `prisma.$transaction` — zero race-condition dispatches |
+| ![Schema](https://img.shields.io/badge/Schema-1e40af?style=flat-square) | 11 PostgreSQL models · 6 enums · Prisma ORM |
+| ![RBAC](https://img.shields.io/badge/RBAC-5b21b6?style=flat-square) | 4 roles (Fleet Manager, Dispatcher, Safety Officer, Financial Analyst) enforced on every route |
+| ![Weather AI](https://img.shields.io/badge/Weather%20%2B%20AI-b45309?style=flat-square) | Grok (xAI) + OpenWeather — hourly risk reassessment of every active trip via node-cron |
+| ![API](https://img.shields.io/badge/API-065f46?style=flat-square) | 40+ REST endpoints across 9 Express routers |
+
+**Technical Decisions**
+
+| Decision | Reasoning |
+|----------|-----------|
+| **Prisma transactions for dispatch** | 9 business rules must pass or fail atomically — partial application would leave the fleet in an inconsistent state |
+| **node-cron hourly weather reassessment** | Trip risk isn't static once dispatched; live weather can change mid-trip and needs to surface to dispatchers automatically |
+| **RBAC at 4 distinct roles** | Fleet operations separate concerns (dispatch vs. safety vs. finance) that a single "admin" role would blur |
+| **Auto-maintenance on trip completion** | Service thresholds crossed during a trip should flag a vehicle before the next dispatch, not rely on a human remembering |
+
+<p align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/React%2018-20232A?style=flat-square&logo=react&logoColor=61DAFB" />&nbsp;
+<img src="https://img.shields.io/badge/Zustand-764ABC?style=flat-square" />&nbsp;
+<img src="https://img.shields.io/badge/TanStack%20Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" />
+</p>
+
+🔗 [Repository](https://github.com/aryanf192811-eng/LEVO)
+
+<br/>
+
+---
+
+### 💰 PeoplePay360 — Explainable HR & Payroll Engine
+
+> Odoo Hackathon 2026 · Top 50 Zonal Finalist of 857 teams (from 20,000+ registrations)
+
+**Problem:** Payroll needs contracts, schedules, attendance, and leave to agree at once before a single payslip can be trusted — most HR tools store these as disconnected records.
+
+```mermaid
+flowchart LR
+    A([Employee]) --> B([Contract\nPeriod-Scoped])
+    B --> C([Payrun\nWizard])
+    C --> D([Salary Rule\nEngine])
+    D --> E([Payslip\nFrozen at Compute])
+    E --> F([Payslip Diff /\nWhat-If Simulator])
+    style A fill:#1e40af,color:#fff,stroke:none
+    style B fill:#5b21b6,color:#fff,stroke:none
+    style C fill:#7c2d12,color:#fff,stroke:none
+    style D fill:#065f46,color:#fff,stroke:none
+    style E fill:#b45309,color:#fff,stroke:none
+    style F fill:#714b67,color:#fff,stroke:none
+```
+
+| | |
+|--|--|
+| ![DB](https://img.shields.io/badge/Postgres%20Exclusion%20Constraint-1e40af?style=flat-square) | No two overlapping active contracts per employee — enforced at the DB level, not app-level hope |
+| ![Ledger](https://img.shields.io/badge/Ledger%20Pattern-5b21b6?style=flat-square) | Leave/payslip totals always computed live from real rows, never a field a form can silently overwrite |
+| ![AI](https://img.shields.io/badge/Read--Only%20AI-714b67?style=flat-square) | Gemini-backed assistant scoped strictly to the same aggregate JSON the Dashboard shows — never decides anything |
+| ![Simulator](https://img.shields.io/badge/What--If%20Simulator-b45309?style=flat-square) | Dry-runs the real payroll engine and unconditionally rolls back — no separate "fake" calculation path |
+| ![Auth](https://img.shields.io/badge/5--Role%20RBAC-065f46?style=flat-square) | Enforced at nav, route, and middleware layers — the last two are the actual security boundary |
+
+**Technical Decisions**
+
+| Decision | Reasoning |
+|----------|-----------|
+| **Raw PERN, zero ORM** | Every layer has a real, explainable answer — payroll correctness isn't something to trust to ORM abstraction |
+| **Contracts never edited in place** | A raise is a new contract row; the old one stays correct for historical payslips |
+| **Frozen payslip lines** | Editing a Salary Rule afterward changes future payruns only — past payslips stay exactly as computed |
+| **Statistical anomaly detection** | A real population mean + stddev catches genuine outliers, not a hardcoded threshold that produces false positives |
+
+<p align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/React%2018-20232A?style=flat-square&logo=react&logoColor=61DAFB" />&nbsp;
+<img src="https://img.shields.io/badge/TanStack%20Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Zustand-764ABC?style=flat-square" />&nbsp;
+<img src="https://img.shields.io/badge/Gemini%20AI-4285F4?style=flat-square&logo=google&logoColor=white" />
+</p>
+
+🔗 [Repository](https://github.com/aryanf192811-eng/pay360)
+
+<br/>
+
+---
+
+### 🖥️ CodeVerter — Local-First AI Code Converter
+
+> 26 languages · 100% local LLM · zero cloud, zero API keys, zero telemetry
+
+**Problem:** Cloud-based code-conversion tools mean sending proprietary code to a third party and paying per call. This started as an AWS Lambda function with a hardcoded API key — rebuilt from the ground up so nothing leaves the machine by default.
+
+```mermaid
+flowchart LR
+    A([React Frontend\nVite :5173]) -->|fetch /api| B([C++17 HTTP Server\ncpp-httplib :8080])
+    B -->|localhost| C([Ollama\n:11434])
+    B --> D[(history.jsonl)]
+    B -.optional fallback.-> E([Groq Cloud API])
+    style A fill:#1e40af,color:#fff,stroke:none
+    style B fill:#0f172a,color:#fff,stroke:none
+    style C fill:#065f46,color:#fff,stroke:none
+    style D fill:#5b21b6,color:#fff,stroke:none
+    style E fill:#7c2d12,color:#fff,stroke:none
+```
+
+| | |
+|--|--|
+| ![Local](https://img.shields.io/badge/100%25%20Local-065f46?style=flat-square) | Self-contained C++17 server vendors its only two deps as single headers — no package manager needed |
+| ![Streaming](https://img.shields.io/badge/SSE%20Streaming-1e40af?style=flat-square) | Converted code fills in token-by-token instead of waiting on one blocking response |
+| ![Verify](https://img.shields.io/badge/Run%20%26%20Compare-7c2d12?style=flat-square) | Actually executes both source and converted code locally and diffs real output — real evidence, not plausible-looking code |
+| ![Complexity](https://img.shields.io/badge/Complexity%20Analysis-5b21b6?style=flat-square) | A second local LLM call rates Big-O time/space complexity with severity-colored badges |
+| ![Fallback](https://img.shields.io/badge/Cloud%20Fallback-off%20by%20default-991b1b?style=flat-square) | Groq only triggers if Ollama is unreachable, with a visible banner whenever a conversion leaves the machine |
+
+**Technical Decisions**
+
+| Decision | Reasoning |
+|----------|-----------|
+| **C++17 + cpp-httplib** | A single compiled binary with no runtime dependency tree — the whole point is nothing to install beyond a compiler |
+| **Ollama over a cloud API by default** | The original version leaked a hardcoded API key; local inference removes the entire class of problem |
+| **SSE over WebSockets** | One-directional server→client token stream doesn't need WebSocket's bidirectional complexity |
+| **Run & Compare with a hard timeout** | A runaway converted snippet shouldn't hang the backend — auto-probed local runtimes, 10s kill switch |
+
+<p align="center">
+<img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Ollama-000000?style=flat-square" />&nbsp;
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />&nbsp;
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" />
+</p>
+
+🔗 [Repository](https://github.com/aryanf192811-eng/codeverter)
+
+<br/>
+
+---
+
 ### 🏭 B-Cart — Manufacturing ERP
 
 > Hackathon build · ERP-style business workflow architecture
@@ -151,7 +374,7 @@ flowchart LR
 <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
 </p>
 
-<!-- 🔗 [Repository](#) · [Schema Diagram](#) -->
+🔗 [Repository](https://github.com/aryanf192811-eng/B-cart)
 
 <br/>
 
@@ -333,7 +556,7 @@ flowchart LR
 <img src="https://img.shields.io/badge/SSE-DC2626?style=flat-square" />
 </p>
 
-🔗 [Repository](https://github.com/aryanf192811-eng/latent)
+🔗 [Repository](https://github.com/aryanf192811-eng/latent) &nbsp;·&nbsp; [Demo](https://drive.google.com/file/d/1ch8jEU1LbNl-YH6gKiY0ZaU6G7j_l7yL/view?usp=sharing)
 
 ---
 
@@ -346,12 +569,22 @@ flowchart LR
 
 <br/>
 
+**🏆 Honors & Awards**
+
 | | |
 |--|--|
-| 🏆 | **Final Round** — Odoo × Parul University Hackathon 2026 |
-| 🎓 | **GCF Training** — Ethnotech · Shipped Latent (full-stack campus platform) as capstone |
-| 💼 | **Paid freelance engagement** — SoundRich Hearing |
-| 📜 | Certifications: HTML · CSS · JavaScript · Full-Stack Architecture & System Design |
+| 🥇 | **Odoo Hackathon 2026** — Top 50 Zonal Finalist, 857 teams (from 20,000+ registrations) · built PeoplePay360 |
+| 🏆 | **Odoo × Parul University Hackathon 2026** — Finalist, Top 100 of 1,300 teams |
+| 🌱 | **Parul University Environment Hackathon 2026** — Finalist, Round 3, Top 17 teams |
+
+**📜 Certifications**
+
+| | |
+|--|--|
+| 🟨 | **JavaScript Specialist** — Certiport · Pearson VUE (Aug 2026) |
+| 🎩 | **Red Hat Certified System Administrator (RHCSA)** — Red Hat (Aug 2026) |
+| ☁️ | **AWS Academy Graduate – Cloud Foundations** — AWS (Apr 2026) |
+| 🌐 | **HTML & CSS Specialist** — Certiport · Pearson VUE (Mar 2026) |
 
 ---
 
@@ -391,13 +624,4 @@ flowchart LR
   3. Actions tab → "Generate Snake Animation" → Run workflow
   4. After it runs, uncomment the snake img line in the
      "GitHub Activity" section above.
-
-  ═══════════════════════════════════════════════
-  REMAINING PLACEHOLDERS TO FILL
-  ═══════════════════════════════════════════════
-  → LinkedIn URL in Connect section
-  → Portfolio URL (aryandev-sage.vercel.app already deployed)
-  → B-Cart repo link (currently commented out)
-  → Latent demo video link
-  ═══════════════════════════════════════════════
 -->
