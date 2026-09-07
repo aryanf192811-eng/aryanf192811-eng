@@ -6,10 +6,29 @@
 </p>
 
 <p align="center">
-B.Tech CSE · Parul University · 2025–2029<br/>
+B.Tech CSE · Parul University · 2025–2029 · 📍 Vadodara, India<br/>
 Backend systems, database engineering, and workflow automation.<br/>
-I design systems where data models, workflows, and state transitions are first-class citizens.
+I design systems where data models, workflows, and state transitions are first-class citizens.<br/>
+🟢 Open to internships, backend &amp; full-stack roles
 </p>
+
+---
+
+## 📊 By the Numbers
+
+**Language mix across major projects** <sub>(by bytes written, via GitHub API)</sub>
+
+```text
+TypeScript   ███████████░░░░░░░░░░░░░  48.8%
+JavaScript   ██████████░░░░░░░░░░░░░░  40.4%
+Python       ██░░░░░░░░░░░░░░░░░░░░░░   6.7%
+C++          ░░░░░░░░░░░░░░░░░░░░░░░░   1.3%
+Other        █░░░░░░░░░░░░░░░░░░░░░░░   2.9%
+```
+
+| | | | |
+|--|--|--|--|
+| 🏗️ **8** shipped projects | 🔌 **145+** API endpoints (Aaraksha) | 🗄️ **33** DB tables, zero ORM | 🏆 **3×** hackathon finalist |
 
 ---
 
