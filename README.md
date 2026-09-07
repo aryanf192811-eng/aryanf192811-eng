@@ -16,19 +16,15 @@ I design systems where data models, workflows, and state transitions are first-c
 
 ## 📊 By the Numbers
 
-**Language mix across major projects** <sub>(by bytes written, via GitHub API)</sub>
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/impact-stats.svg" alt="8 shipped projects, 145+ API endpoints, 33 DB tables, 3x hackathon finalist" />
+</p>
 
-```text
-TypeScript   ███████████░░░░░░░░░░░░░  48.8%
-JavaScript   ██████████░░░░░░░░░░░░░░  40.4%
-Python       ██░░░░░░░░░░░░░░░░░░░░░░   6.7%
-C++          ░░░░░░░░░░░░░░░░░░░░░░░░   1.3%
-Other        █░░░░░░░░░░░░░░░░░░░░░░░   2.9%
-```
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/language-stats.svg" alt="Language mix: TypeScript 48.8%, JavaScript 40.4%, Python 6.7%, C++ 1.3%, Other 2.9%" />
+</p>
 
-| | | | |
-|--|--|--|--|
-| 🏗️ **8** shipped projects | 🔌 **145+** API endpoints (Aaraksha) | 🗄️ **33** DB tables, zero ORM | 🏆 **3×** hackathon finalist |
+<p align="center"><sub>Language mix computed from real GitHub API byte counts across all 6 major projects — not a generated widget.</sub></p>
 
 ---
 
