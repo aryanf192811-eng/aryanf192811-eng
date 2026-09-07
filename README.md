@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;4+Portals+%C2%B7+145+API+Endpoints+%C2%B7+A+Real+Trained+ML+Model;3x+Hackathon+Finalist+%C2%B7+Odoo+%C3%97+Parul+University+2026" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;Building+Aaraksha+%C2%B7+4-Portal+Safety+Platform+%C2%B7+SIH+2026;3x+Hackathon+Finalist+%C2%B7+Odoo+%C3%97+Parul+University+2026" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@ I design systems where data models, workflows, and state transitions are first-c
 ## 📊 By the Numbers
 
 <p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/impact-stats.svg" alt="8 shipped projects, 145+ API endpoints, 33 DB tables, 3x hackathon finalist" />
+  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/impact-stats.svg" alt="8 shipped projects, 40+ API endpoints, 30+ DB tables, 3x hackathon finalist" />
 </p>
 
 <p align="center">
@@ -101,10 +101,10 @@ I design systems where data models, workflows, and state transitions are first-c
 <tr>
 <td width="70%" valign="top">
   <b>🛡️ Aaraksha</b> &nbsp;<img src="https://img.shields.io/badge/⭐_Flagship-SIH_2026-8b5cf6?style=flat-square" valign="middle" /><br/>
-  <sub>AI travel planning, verified local tourism &amp; offline-SOS safety platform for NE India — 4 portals, 145 endpoints, a real trained ML model.</sub>
+  <sub>AI-native travel planning, verified local tourism &amp; offline-resilient safety platform for Northeast India — 4 portals, one real-time system.</sub>
 </td>
 <td width="30%" align="center" valign="middle">
-  <a href="https://github.com/aryanf192811-eng/Aaraksha"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <img src="https://img.shields.io/badge/Private_during_SIH_2026-30363d?style=for-the-badge&logo=lock&logoColor=white" />
 </td>
 </tr>
 <tr><td colspan="2"><hr/></td></tr>

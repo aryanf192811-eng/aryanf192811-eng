@@ -11,15 +11,15 @@
     <rect x="209" y="0" width="193" height="118" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <rect x="209" y="0" width="193" height="4" rx="2" fill="#f97316" />
     <text x="305.5" y="38" text-anchor="middle" font-size="22">🔌</text>
-    <text x="305.5" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#f97316">145+</text>
-    <text x="305.5" y="94" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="500" fill="#8b949e">API Endpoints</text>
+    <text x="305.5" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#f97316">40+</text>
+    <text x="305.5" y="94" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="500" fill="#8b949e">API Endpoints (LEVO)</text>
   </g>
   <g>
     <rect x="418" y="0" width="193" height="118" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <rect x="418" y="0" width="193" height="4" rx="2" fill="#a78bfa" />
     <text x="514.5" y="38" text-anchor="middle" font-size="22">🗄️</text>
-    <text x="514.5" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#a78bfa">33</text>
-    <text x="514.5" y="94" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="500" fill="#8b949e">DB Tables · Zero ORM</text>
+    <text x="514.5" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#a78bfa">30+</text>
+    <text x="514.5" y="94" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="500" fill="#8b949e">DB Tables (Latent)</text>
   </g>
   <g>
     <rect x="627" y="0" width="193" height="118" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" />
