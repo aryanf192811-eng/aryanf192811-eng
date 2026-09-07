@@ -15,11 +15,6 @@ I design systems where data models, workflows, and state transitions are first-c
 
 ## ⚡ GitHub Activity
 
-<!-- Activity graph — area fill, tokyo-night theme. Reliably loads for all account sizes -->
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=aryanf192811-eng&bg_color=0d1117&color=58A6FF&line=1D4ED8&point=7C3AED&area_color=1D4ED8&area=true&hide_border=true&theme=tokyo-night&custom_title=Contribution%20Activity" alt="Contribution Activity Graph" />
-</p>
-
 <p align="center">
   <img height="180em" src="https://streak-stats.demolab.com/?user=aryanf192811-eng&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&background=0D1117&stroke=1D4ED8&ring=7C3AED&fire=EC4899&currStreakLabel=58A6FF" alt="GitHub Streak" />
 </p>
@@ -86,53 +81,69 @@ I design systems where data models, workflows, and state transitions are first-c
 
 ## 🏗️ Major Projects
 
-<p align="center">
-  <a href="https://github.com/aryanf192811-eng/Aaraksha">
-    <img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=aryanf192811-eng&repo=Aaraksha&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Aaraksha — SIH 2026 flagship" />
-  </a>
-  <br/><sub>⭐ Flagship — Smart India Hackathon 2026</sub>
-</p>
-
-<table align="center">
+<table>
 <tr>
-<td width="50%">
-  <a href="https://github.com/aryanf192811-eng/LEVO">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=aryanf192811-eng&repo=LEVO&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="LEVO" />
-  </a>
+<td width="70%" valign="top">
+  <b>🛡️ Aaraksha</b> &nbsp;<img src="https://img.shields.io/badge/⭐_Flagship-SIH_2026-8b5cf6?style=flat-square" valign="middle" /><br/>
+  <sub>AI travel planning, verified local tourism &amp; offline-SOS safety platform for NE India — 4 portals, 145 endpoints, a real trained ML model.</sub>
 </td>
-<td width="50%">
-  <a href="https://github.com/aryanf192811-eng/pay360">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=aryanf192811-eng&repo=pay360&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="PeoplePay360" />
-  </a>
+<td width="30%" align="center" valign="middle">
+  <a href="https://github.com/aryanf192811-eng/Aaraksha"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </td>
 </tr>
+<tr><td colspan="2"><hr/></td></tr>
 <tr>
-<td width="50%">
-  <a href="https://github.com/aryanf192811-eng/codeverter">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=aryanf192811-eng&repo=codeverter&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="CodeVerter" />
-  </a>
+<td width="70%" valign="top">
+  <b>🚛 LEVO</b><br/>
+  <sub>Production-grade fleet &amp; logistics — 9-rule atomic dispatch engine, Grok AI + weather risk scoring, 40+ REST endpoints.</sub>
 </td>
-<td width="50%">
-  <a href="https://github.com/aryanf192811-eng/latent">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=aryanf192811-eng&repo=latent&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Latent" />
-  </a>
+<td width="30%" align="center" valign="middle">
+  <a href="https://github.com/aryanf192811-eng/LEVO"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </td>
 </tr>
+<tr><td colspan="2"><hr/></td></tr>
 <tr>
-<td width="50%">
-  <a href="https://github.com/aryanf192811-eng/Pizza-Traveloop">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=aryanf192811-eng&repo=Pizza-Traveloop&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Traveloop" />
-  </a>
+<td width="70%" valign="top">
+  <b>💰 PeoplePay360</b> &nbsp;<img src="https://img.shields.io/badge/Odoo_Hackathon_2026-Top_50%2F857-714b67?style=flat-square" valign="middle" /><br/>
+  <sub>Explainable HR &amp; payroll engine — DB-level contract integrity and a live What-If simulator.</sub>
 </td>
-<td width="50%" align="center">
-  <a href="https://github.com/aryanf192811-eng?tab=repositories">
-    <sub><b>→ Browse all repositories</b></sub>
-  </a>
+<td width="30%" align="center" valign="middle">
+  <a href="https://github.com/aryanf192811-eng/pay360"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+<tr>
+<td width="70%" valign="top">
+  <b>🖥️ CodeVerter</b><br/>
+  <sub>100% local AI code converter — 26 languages via a local LLM (Ollama), zero cloud calls, zero API keys by default.</sub>
+</td>
+<td width="30%" align="center" valign="middle">
+  <a href="https://github.com/aryanf192811-eng/codeverter"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+<tr>
+<td width="70%" valign="top">
+  <b>🎓 Latent</b><br/>
+  <sub>Full-stack campus social network for a 50k-student university — real-time feed, Razorpay payments, interactive campus map.</sub>
+</td>
+<td width="30%" align="center" valign="middle">
+  <a href="https://github.com/aryanf192811-eng/latent"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+<tr>
+<td width="70%" valign="top">
+  <b>✈️ Traveloop</b> &nbsp;<img src="https://img.shields.io/badge/Odoo_x_Parul_Hackathon_2026-Finalist-f59e0b?style=flat-square" valign="middle" /><br/>
+  <sub>AI-assisted trip planning — Gemini packing lists, PDF invoicing, 30+ REST endpoints.</sub>
+</td>
+<td width="30%" align="center" valign="middle">
+  <a href="https://github.com/aryanf192811-eng/Pizza-Traveloop"><img src="https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </td>
 </tr>
 </table>
 
-<p align="center"><sub>Full case studies (architecture, decisions, live demos) at <a href="https://ganpatikumar.me">ganpatikumar.me</a></sub></p>
+<p align="center"><sub>Full case studies (architecture, decisions, live demos) at <a href="https://ganpatikumar.me"><b>ganpatikumar.me</b></a> &nbsp;·&nbsp; <a href="https://github.com/aryanf192811-eng?tab=repositories">browse all repositories →</a></sub></p>
 
 ---
 
