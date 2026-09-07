@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;Building+Aaraksha+%C2%B7+4-Portal+Safety+Platform+%C2%B7+SIH+2026;3x+Hackathon+Finalist+%C2%B7+Odoo+%C3%97+Parul+University+2026" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;Real-time+systems+%C2%B7+Event-driven+architecture+%C2%B7+Zero-ORM+PostgreSQL;3x+Hackathon+Finalist+%C2%B7+Odoo+%C3%97+Parul+University+2026" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -22,10 +22,10 @@ I design systems where data models, workflows, and state transitions are first-c
 </p>
 
 <p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/language-stats.svg" alt="Language mix: TypeScript 48.8%, JavaScript 40.4%, Python 6.7%, C++ 1.3%, Other 2.9%" />
+  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/language-stats.svg" alt="Language mix: TypeScript 46.7%, JavaScript 46.4%, Python 5.9%, C++ 0.8%, Other 0.2%" />
 </p>
 
-<p align="center"><sub>Language mix computed from real GitHub API byte counts across all 6 major projects — not a generated widget.</sub></p>
+<p align="center"><sub>Computed from real GitHub API byte counts across every repository (public + private) — vendored dependencies, seed/dataset files, and duplicated static content excluded by hand, not a generated widget.</sub></p>
 
 ---
 
