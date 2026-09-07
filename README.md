@@ -1,12 +1,13 @@
 <!-- HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ganpati&fontSize=80&fontColor=fff&animation=twinkling&fontAlignY=42&desc=Backend+Systems+%7C+Database+Engineering+%7C+Workflow+Automation&descAlignY=64&descSize=16&descColor=93c5fd" />
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;PostgreSQL+%C2%B7+FastAPI+%C2%B7+Node.js+%C2%B7+React+19+%C2%B7+Raw+SQL;Manufacturing+ERP+%C2%B7+GATE+Platform+%C2%B7+Campus+Social+Platform" alt="Typing SVG" />
+  <img width="100%" src="https://raw.githubusercontent.com/aryanf192811-eng/aryanf192811-eng/main/assets/header-banner.svg" alt="Ganpati Kumar — Backend Engineer, Database Systems Architect" />
 </p>
 
 <p align="center">
-B.Tech CSE · Parul University · 2025–2029 · 📍 Vadodara, India<br/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&pause=1000&color=58A6FF&center=true&vCenter=true&width=680&lines=Schema-first+%7C+Workflow-driven+%7C+Data+models+are+first-class+citizens;4+Portals+%C2%B7+145+API+Endpoints+%C2%B7+A+Real+Trained+ML+Model;3x+Hackathon+Finalist+%C2%B7+Odoo+%C3%97+Parul+University+2026" alt="Typing SVG" />
+</p>
+
+<p align="center">
 Backend systems, database engineering, and workflow automation.<br/>
 I design systems where data models, workflows, and state transitions are first-class citizens.<br/>
 🟢 Open to internships, backend &amp; full-stack roles
