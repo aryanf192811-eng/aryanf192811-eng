@@ -78,8 +78,9 @@ I design systems where data models, workflows, and state transitions are first-c
 
 <p align="center">
   <img src="https://img.shields.io/badge/Currently%20deepening-0f172a?style=for-the-badge" />&nbsp;
-  <img src="https://img.shields.io/badge/Java%20%2B%20Spring%20Boot-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/System%20Design-1d4ed8?style=for-the-badge" />&nbsp;
+  <img src="https://img.shields.io/badge/System%20Design%20%26%20Architecture-1d4ed8?style=for-the-badge" />&nbsp;
+  <img src="https://img.shields.io/badge/DevOps-059669?style=for-the-badge" />&nbsp;
+  <img src="https://img.shields.io/badge/Cloud%20Platforms-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/GATE%20CSE%202028-DC2626?style=for-the-badge" />
 </p>
 
